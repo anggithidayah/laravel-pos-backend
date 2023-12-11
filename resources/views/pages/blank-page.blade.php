@@ -1,20 +1,43 @@
-@extends('layouts.app')
+@extends('layouts.error')
 
-@section('title', 'Blank Page')
+@section('title', '503')
 
 @push('style')
     <!-- CSS Libraries -->
 @endpush
 
-@section('main')<div class="main-content">
-        <section class="section">
-            <div class="section-header">
-                <h1>Blank Page</h1>
+@section('main')
+    <div class="page-error">
+        <div class="page-inner">
+            <h1>503</h1>
+            <div class="page-description">
+                Under Maintenance | Be right back. Xclude ID
             </div>
-
-            <div class="section-body">
+            <div class="page-search">
+                <form>
+                    <div class="form-group floating-addon floating-addon-not-append">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+                            <input type="text"
+                                class="form-control"
+                                placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary btn-lg">
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="mt-3">
+                    <a href="#">Back to Home</a>
+                </div>
             </div>
-        </section>
+        </div>
     </div>
 @endsection
 
